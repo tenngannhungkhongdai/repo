@@ -17,7 +17,7 @@ function color(){
     document.getElementById('change').style.backgroundColor='rgb('+r+','+g+','+b+')'
 }
 function white(){
-    document.getElementById('change').style.backgroundColor='white'
+    document.getElementById('change').style.backgroundColor='rgba(255,255,255,0)'
 }
 document.getElementById('triangle').addEventListener('click',numberOneTriangle)
 function numberOneTriangle(){
@@ -41,5 +41,9 @@ function Dongho() {
     gio.innerHTML = Giohientai;
     phut.innerHTML = Phuthientai;
     giay.innerHTML = Giayhientai;
+    let r = Math.floor(Math.random()*256)
+    let g = Math.floor(Math.random()*256)
+    let b = Math.floor(Math.random()*256)
+    document.body.style.backgroundColor='rgb('+r+','+g+','+b+')'
 }
 var Demgio = setInterval(Dongho, 1000);
